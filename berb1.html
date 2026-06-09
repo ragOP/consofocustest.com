@@ -22,6 +22,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <title>Patchs minceur comparés 2026 — Évaluation indépendante | Conso Focus Test</title>
 <meta name="robots" content="noindex,nofollow">
+<script type="text/javascript" src="https://trk.toprateddaily.online/track.js?rtkcmpid=6a27ea7755a5b3e87b8939fb"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
@@ -46,19 +47,21 @@
   a{color:inherit}
   img{max-width:100%;display:block}
 
-  /* top eyebrow strip */
-  .topstrip{background:var(--blue-d);color:#fff;font-size:13px;text-align:center;padding:7px 12px;font-weight:500;letter-spacing:.01em}
+  /* top trust bar */
+  .topbar{background:var(--ink);color:#fff;font-size:13px;font-weight:600;text-align:center;padding:9px 16px;letter-spacing:.2px;display:flex;align-items:center;justify-content:center;gap:8px}
+  .topbar .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(31,157,90,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,157,90,.6)}70%{box-shadow:0 0 0 8px rgba(31,157,90,0)}100%{box-shadow:0 0 0 0 rgba(31,157,90,0)}}
 
-  /* header */
-  header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
-  .site-row{display:flex;align-items:center;justify-content:space-between;padding:11px 0;gap:10px}
-  .brand{display:flex;align-items:center;gap:10px;min-width:0}
-  .brand img{height:32px;width:auto;flex-shrink:0}
-  .brand .bx{min-width:0}
-  .brand .bn{font-weight:800;font-size:16px;color:var(--blue);line-height:1.15;white-space:nowrap}
-  .brand .bs{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .vbadge{font-size:12px;font-weight:700;color:var(--green);background:var(--green-l);padding:6px 11px;border-radius:999px;white-space:nowrap;flex-shrink:0}
-  .vbadge .short{display:none}
+  /* masthead */
+  .masthead{border-bottom:1px solid var(--line);padding:18px 0;background:#fff;position:sticky;top:0;z-index:40}
+  .masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.3px;color:var(--ink);min-width:0;flex:1 1 auto}
+  .logo .mark{width:34px;height:34px;border-radius:9px;flex-shrink:0}
+  .logo img.mark{object-fit:contain;background:transparent;box-shadow:none;border-radius:0;width:34px;height:34px}
+  .logo-text{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+  .logo-name{white-space:nowrap}
+  .logo small{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.3px;margin-top:1px;white-space:nowrap}
+  .masthead .badge{font-size:11.5px;font-weight:700;color:var(--blue);background:var(--blue-l);padding:6px 11px;border-radius:50px;white-space:nowrap;flex-shrink:0}
 
   /* hero */
   .eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);background:var(--blue-l);padding:6px 12px;border-radius:999px;margin:26px 0 16px}
@@ -102,20 +105,25 @@
   .card.r2 .rank-bar{background:#7a8b96}
   .card.r3 .rank-bar{background:#94a3ab}
   .card-body{padding:20px 22px}
-  .prod-img{background:var(--bg);border-radius:12px;padding:14px;margin-bottom:16px;text-align:center}
-  .prod-img img{margin:0 auto;max-height:200px;width:auto}
-  .prod-name{font-family:'Fraunces',serif;font-size:22px;font-weight:700;margin-bottom:10px}
-  .score-row{display:flex;align-items:center;gap:14px;margin-bottom:6px;flex-wrap:wrap}
-  .score{font-family:'Fraunces',serif;font-size:34px;font-weight:700;color:var(--blue);line-height:1}
-  .score span{font-size:16px;color:var(--muted)}
-  .score-lab{font-size:13px;color:var(--muted)}
-  .score-lab b{display:block;color:var(--green);font-size:15px}
-  .stars{color:var(--gold);font-size:18px;letter-spacing:2px;margin-bottom:14px}
-  .price{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
-  .price .now{font-size:22px;font-weight:800;color:var(--ink)}
-  .price .was{text-decoration:line-through;color:var(--muted);font-size:16px}
-  .price .off{background:var(--red);color:#fff;font-size:12.5px;font-weight:700;padding:3px 9px;border-radius:6px}
-  .perday{font-size:13.5px;color:var(--amber);font-weight:700;margin-bottom:16px}
+  .prod-top{display:flex;gap:18px;align-items:center;margin-bottom:18px}
+  .prod-img{width:140px;height:140px;flex-shrink:0;display:block;object-fit:contain;object-position:center}
+  .prod-info{flex:1;min-width:0}
+  .prod-name{font-weight:800;font-size:20px;letter-spacing:-.3px;color:var(--ink);line-height:1.2;margin-bottom:8px}
+  .score-row{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  .score-badge{display:flex;flex-direction:column;align-items:center;justify-content:center;width:54px;height:54px;border-radius:13px;color:#fff;flex-shrink:0;line-height:1;box-shadow:var(--shadow)}
+  .score-badge.s99{background:linear-gradient(135deg,var(--green),#16a34a)}
+  .score-badge.s90{background:linear-gradient(135deg,var(--blue),var(--blue-d))}
+  .score-badge.s85{background:linear-gradient(135deg,#64748b,#475569)}
+  .score-badge b{font-size:19px;font-weight:800}
+  .score-badge small{font-size:8.5px;font-weight:700;opacity:.88;margin-top:1px;letter-spacing:.3px}
+  .score-txt{font-size:13.5px;font-weight:700;color:var(--ink)}
+  .score-txt span{display:block;font-size:12px;font-weight:600;color:var(--muted)}
+  .stars{color:var(--gold);font-size:14px;letter-spacing:1px;margin-top:2px}
+  .price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+  .price-now{font-size:30px;font-weight:800;color:var(--ink);letter-spacing:-1px}
+  .price-old{font-size:17px;color:var(--muted);text-decoration:line-through;font-weight:600}
+  .price-tag{font-size:12px;font-weight:800;color:var(--green);background:var(--green-l);padding:4px 9px;border-radius:6px}
+  .price-day{display:inline-block;font-size:13.5px;color:var(--blue);font-weight:700;margin-bottom:16px;background:#fff8e1;padding:6px 10px;border-radius:6px}
   ul.feat{list-style:none;margin-bottom:14px}
   ul.feat li{padding:7px 0 7px 26px;position:relative;font-size:15px}
   ul.feat li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
@@ -147,11 +155,14 @@
   .ed-sign{display:flex;align-items:center;gap:12px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
 
   /* why #1 */
-  .why-hero{background:linear-gradient(180deg,var(--blue-l),#fff);border:1px solid var(--line);border-radius:var(--radius);padding:22px;text-align:center;margin-bottom:20px}
-  .why-hero img{margin:0 auto 14px;max-height:200px;width:auto}
-  .why-hero .wt{font-weight:700;font-size:15px}
-  .why-hero .wm{font-size:13px;color:var(--muted);margin-bottom:8px}
-  .why-hero .ws{font-family:'Fraunces',serif;font-size:30px;font-weight:700;color:var(--blue)}
+  .mini-winner{display:flex;align-items:center;gap:16px;background:#fff;border:2px solid var(--blue);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin:18px 0 28px;position:relative}
+  .mini-winner::before{content:"🏆";position:absolute;top:-14px;left:18px;background:var(--blue);color:#fff;font-size:13px;padding:4px 11px 4px 10px;border-radius:50px;font-weight:800;letter-spacing:.3px;box-shadow:var(--shadow)}
+  .mini-winner .mi{width:74px;height:74px;flex-shrink:0;display:block;object-fit:contain;object-position:center}
+  .mini-winner .mtxt{flex:1;min-width:0}
+  .mini-winner .mtxt b{display:block;font-size:16px;font-weight:800;color:var(--ink);line-height:1.2}
+  .mini-winner .mtxt span{font-size:13px;color:var(--muted);font-weight:600}
+  .mini-winner .mscore{font-family:'Fraunces',serif;font-size:30px;font-weight:700;color:var(--green);line-height:1;flex-shrink:0}
+  .mini-winner .mscore small{display:block;font-size:9.5px;font-family:'Figtree',sans-serif;font-weight:800;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;text-align:center;margin-top:2px}
   h2.lead{font-size:26px;margin:0 0 16px}
   h2.mid{font-size:22px;margin:26px 0 14px}
   .ingrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0 22px}
@@ -180,7 +191,7 @@
   .sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(16,36,46,.1);transform:translateY(120%);transition:transform .3s ease}
   .sticky.show{transform:translateY(0)}
   .sticky-in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:10px 16px}
-  .sticky img{height:46px;width:auto;border-radius:8px}
+  .sticky .pi{width:44px;height:44px;flex-shrink:0;display:block;object-fit:contain;object-position:center}
   .sticky .st{flex:1;min-width:0}
   .sticky .st b{font-size:13.5px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .sticky .st small{font-size:11px;color:var(--muted);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -191,25 +202,22 @@
     h2.center,h2.lead{font-size:22px}
     .stats{grid-template-columns:1fr 1fr}
     .ingrid{grid-template-columns:1fr}
-    .score{font-size:30px}
-    /* compact header */
-    .site-row{padding:9px 0;gap:8px}
-    .brand img{height:26px}
-    .brand .bn{font-size:14.5px}
-    .brand .bs{font-size:11px}
-    .vbadge{font-size:11.5px;padding:6px 10px}
+    .masthead{padding:14px 0}
+    .masthead .wrap{gap:8px}
+    .logo{font-size:clamp(11.5px,3.4vw,16px);gap:8px}
+    .logo .mark,.logo img.mark{width:28px;height:28px}
+    .logo small{font-size:10px;margin-top:0}
+    .masthead .badge{font-size:clamp(8.5px,2.35vw,11.5px);padding:4px 8px}
+    .prod-top{flex-direction:column;text-align:center}
+    .prod-img{width:100%;max-width:200px;height:auto;max-height:200px;margin:0 auto}
     /* graceful rank bars */
     .rank-bar{font-size:12.5px;line-height:1.3;padding:9px 16px}
   }
   @media (max-width:430px){
-    /* drop tagline + use short badge so header stays one tidy line */
-    .brand .bs{display:none}
-    .vbadge .full{display:none}
-    .vbadge .short{display:inline}
     .lede{font-size:17.5px}
     .q{font-size:19px}
     .sticky-in{padding:9px 12px;gap:10px}
-    .sticky img{height:42px}
+    .sticky .pi{width:40px;height:40px}
     .sticky a{font-size:13.5px;padding:10px 13px}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
@@ -217,15 +225,15 @@
 </head>
 <body>
 
-<div class="topstrip">Comparatif consommateurs indépendant · Dernière mise à jour : juin 2026</div>
+<div class="topbar"><span class="dot"></span>Comparatif consommateurs indépendant · Dernière mise à jour : juin 2026</div>
 
-<header class="site">
-  <div class="wrap site-row">
-    <div class="brand">
-      <img src="logo.png" alt="Conso Focus Test">
-      <div class="bx"><div class="bn">Conso Focus Test</div><div class="bs">Comparatif & Évaluation</div></div>
+<header class="masthead">
+  <div class="wrap">
+    <div class="logo">
+      <img class="mark" src="logo.png" alt="Conso Focus Test">
+      <span class="logo-text"><span class="logo-name">Conso Focus Test</span><small>Comparatif & Évaluation</small></span>
     </div>
-    <div class="vbadge"><span class="full">✓ Vérifié par la rédaction</span><span class="short">✓ Vérifié</span></div>
+    <span class="badge">✓ Vérifié par la rédaction</span>
   </div>
 </header>
 
@@ -286,15 +294,22 @@
   <div class="card win" id="winner">
     <div class="rank-bar">🏆 Place 1 · Recommandation de la rédaction</div>
     <div class="card-body">
-      <div class="prod-img"><img src="3.png" alt="Altuva Patch Minceur — 30 patchs"></div>
-      <div class="prod-name">Altuva Patch Minceur</div>
-      <div class="score-row">
-        <div class="score">9,9<span>/10</span></div>
-        <div class="score-lab"><b>Excellent</b>Note globale</div>
+      <div class="prod-top">
+        <img class="prod-img" src="3.png" alt="Altuva Patch Minceur — 30 patchs">
+        <div class="prod-info">
+          <div class="prod-name">Altuva Patch Minceur</div>
+          <div class="score-row">
+            <div class="score-badge s99"><b>9,9</b><small>/10</small></div>
+            <div class="score-txt">Excellent<span>Note globale</span><div class="stars">★★★★★</div></div>
+          </div>
+        </div>
       </div>
-      <div class="stars">★★★★★</div>
-      <div class="price"><span class="now">14,99 €</span><span class="was">59,96 €</span><span class="off">−70 %</span></div>
-      <div class="perday">⚡ Moins de 1 € par jour</div>
+      <div class="price-row">
+        <span class="price-now">14,99 €</span>
+        <span class="price-old">59,96 €</span>
+        <span class="price-tag">−70 %</span>
+      </div>
+      <div class="price-day">⚡ Moins de 1 € par jour</div>
       <ul class="feat">
         <li><b>Complexe d'actifs premium</b> — extrait de berbérine, fucoxanthine, huile de grenade, extrait de thé vert & vitamines, combinés pour le métabolisme des graisses.</li>
         <li><b>Invisible & sans odeur</b> — se porte discrètement sous les vêtements. Personne ne le voit ni ne le sent.</li>
@@ -307,7 +322,7 @@
         <div class="nh">À noter</div>
         <ul><li>Très demandé — disponibilité actuellement limitée.</li></ul>
       </div>
-      <a class="cta" href="https://trk.connectbenefit.online/click" rel="nofollow sponsored" target="_blank">Vers la boutique officielle →</a>
+      <a class="cta" href="https://trk.toprateddaily.online/click" rel="nofollow sponsored" target="_blank">Vers la boutique officielle →</a>
       <div class="trust"><span>Garantie 30 jours</span><span>Commande sécurisée</span><span>Livraison gratuite</span></div>
     </div>
   </div>
@@ -316,14 +331,17 @@
   <div class="card r2">
     <div class="rank-bar">2 · Place 2</div>
     <div class="card-body">
-      <div class="prod-img"><img src="2.png" alt="Patch B — patch minceur"></div>
-      <div class="prod-name">Patch B</div>
-      <div class="score-row">
-        <div class="score">9,0<span>/10</span></div>
-        <div class="score-lab"><b style="color:var(--blue)">Bien</b>Note globale</div>
+      <div class="prod-top">
+        <img class="prod-img" src="2.png" alt="Patch B — patch minceur">
+        <div class="prod-info">
+          <div class="prod-name">Patch B</div>
+          <div class="score-row">
+            <div class="score-badge s90"><b>9,0</b><small>/10</small></div>
+            <div class="score-txt">Bien<span>Note globale</span><div class="stars">★★★★☆</div></div>
+          </div>
+        </div>
       </div>
-      <div class="stars">★★★★☆</div>
-      <div class="price"><span class="now">39,99 €</span></div>
+      <div class="price-row"><span class="price-now">39,99 €</span></div>
       <ul class="feat">
         <li><b>Contient 220 mg de berbérine par patch</b> — un dosage respectable, proprement délivré.</li>
         <li><b>Associé à de l'extrait de thé vert</b> pour un soutien métabolique supplémentaire.</li>
@@ -347,14 +365,17 @@
   <div class="card r3">
     <div class="rank-bar">3 · Place 3</div>
     <div class="card-body">
-      <div class="prod-img"><img src="1.png" alt="Patch C — patch amincissant"></div>
-      <div class="prod-name">Patch C</div>
-      <div class="score-row">
-        <div class="score">8,5<span>/10</span></div>
-        <div class="score-lab"><b style="color:var(--blue)">Bien</b>Note globale</div>
+      <div class="prod-top">
+        <img class="prod-img" src="1.png" alt="Patch C — patch amincissant">
+        <div class="prod-info">
+          <div class="prod-name">Patch C</div>
+          <div class="score-row">
+            <div class="score-badge s85"><b>8,5</b><small>/10</small></div>
+            <div class="score-txt">Bien<span>Note globale</span><div class="stars">★★★★☆</div></div>
+          </div>
+        </div>
       </div>
-      <div class="stars">★★★★☆</div>
-      <div class="price"><span class="now">29,99 €</span></div>
+      <div class="price-row"><span class="price-now">29,99 €</span></div>
       <ul class="feat">
         <li><b>Berbérine plus chrome</b> — le chrome complète le contrôle des fringales.</li>
         <li><b>Design plat et confortable</b> — minimal et discret sous les vêtements.</li>
@@ -395,11 +416,13 @@
   <h2 class="center">Pourquoi le patch Altuva occupe la première place</h2>
   <div class="sub-center">&nbsp;</div>
 
-  <div class="why-hero">
-    <img src="4.png" alt="Altuva Patch Minceur">
-    <div class="wt">Altuva Patch Minceur</div>
-    <div class="wm">Place 1 · Recommandation de la rédaction · Excellentes évaluations</div>
-    <div class="ws">9,9/10</div>
+  <div class="mini-winner">
+    <img class="mi" src="4.png" alt="Altuva Patch Minceur">
+    <div class="mtxt">
+      <b>Altuva Patch Minceur</b>
+      <span>Place 1 · Recommandation de la rédaction · Excellentes évaluations</span>
+    </div>
+    <div class="mscore">9,9<small>/10</small></div>
   </div>
 
   <div class="prose">
@@ -429,7 +452,7 @@
       <div class="bp">⚡ Discret & simple — agit toute la journée</div>
     </div>
 
-    <a class="cta blue" href="https://trk.connectbenefit.online/click" rel="nofollow sponsored" target="_blank">Vers la boutique officielle →</a>
+    <a class="cta blue" href="https://trk.toprateddaily.online/click" rel="nofollow sponsored" target="_blank">Vers la boutique officielle →</a>
     <div class="cta-sub">14,99 € au lieu de 59,96 € · Satisfait ou remboursé 30 jours</div>
     <div class="trust"><span>Garantie 30 jours</span><span>Commande sécurisée</span><span>Livraison rapide</span></div>
   </div>
@@ -454,9 +477,9 @@
 <!-- STICKY MOBILE BAR -->
 <div class="sticky" id="sticky">
   <div class="sticky-in">
-    <img src="3.png" alt="Altuva">
+    <img class="pi" src="3.png" alt="Altuva">
     <div class="st"><b>🏆 Altuva · Place 1</b><small>Reco. rédaction · 9,9/10</small></div>
-    <a href="https://trk.connectbenefit.online/click" rel="nofollow sponsored" target="_blank">Vers l'offre →</a>
+    <a href="https://trk.toprateddaily.online/click" rel="nofollow sponsored" target="_blank">Vers l'offre →</a>
   </div>
 </div>
 
